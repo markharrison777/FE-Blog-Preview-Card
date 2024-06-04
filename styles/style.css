@@ -10,15 +10,49 @@ body {
   font-size: 1em; /*for paragraphs 16px=1em*/
 }
 
+/*background for whole page */
 .container {
   background-color: hsl(47, 88%, 63%);
   height: 100vh;
-}
+  width: 100vw;
 
+  display: grid;
+  place-items: center;
+}
+/*background for card */
 .container__card {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid black;
   border-radius: 20px;
   width: 384px;
-  height: 522px;
+  box-shadow: 16px 16px 0 0 rgba(0, 0, 0, 1);
+  padding: 1.5em;
+}
+
+.container__card-img img {
+  border-radius: 10px;
+}
+
+.container__card-info {
+  padding: 24px 0;
+}
+
+.container__card-info-category {
+  background-color: hsl(47, 88%, 63%);
+  width: fit-content;
+  padding: 0.25em 0.75em;
+
+  border-radius: 4px;
+
+  font-weight: 800;
+}
+
+:hover.container__card-info-title {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+/* footer */
+.attribution {
+  background-color: hsl(47, 88%, 63%);
 }
