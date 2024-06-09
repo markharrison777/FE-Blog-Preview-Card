@@ -6,25 +6,26 @@
 
 body {
   margin: 0;
+  height: 100vh;
   font-family: "Figtree", sans-serif;
   font-size: 1em; /*for paragraphs 16px=1em*/
+  display: grid;
+  place-items: center;
+  background-color: hsl(47, 88%, 63%);
 }
 
 /*background for whole page */
-.container {
-  background-color: hsl(47, 88%, 63%);
-  height: 100vh;
-  width: 100vw;
-
+/* .container {
   display: grid;
   place-items: center;
-}
+} */
 /*background for card */
 .container__card {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid black;
   border-radius: 20px;
-  width: 384px;
+  height: 32.9375em;
+  width: 24em;
   box-shadow: 16px 16px 0 0 rgba(0, 0, 0, 1);
   padding: 1.5em;
 }
@@ -34,7 +35,6 @@ body {
 }
 
 .container__card-info {
-  padding: 24px 0;
 }
 
 .container__card-info-category {
@@ -55,4 +55,9 @@ body {
 /* footer */
 .attribution {
   background-color: hsl(47, 88%, 63%);
+}
+
+footer {
+  text-align: center;
+  font-size: 8px;
 }
