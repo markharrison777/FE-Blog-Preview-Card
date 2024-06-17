@@ -20,6 +20,7 @@ body {
   place-items: center;
 } */
 /*background for card */
+
 .container__card {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid black;
@@ -35,6 +36,8 @@ body {
 }
 
 .container__card-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .container__card-info-category {
@@ -50,6 +53,25 @@ body {
 :hover.container__card-info-title {
   color: hsl(47, 88%, 63%);
   cursor: pointer;
+}
+
+.container__card-info-img {
+  width: 32px;
+  height: 32px;
+}
+
+.container__card-info-description {
+  color: hsl(0, 0%, 50%);
+}
+
+.container__card-info-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.container__card-info-author {
+  font-weight: 800;
+  padding-left: 12px;
 }
 
 /* footer */
