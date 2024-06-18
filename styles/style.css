@@ -53,6 +53,7 @@ body {
 :hover.container__card-info-title {
   color: hsl(47, 88%, 63%);
   cursor: pointer;
+  font-weight: 800;
 }
 
 .container__card-info-img {
