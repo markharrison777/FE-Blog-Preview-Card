@@ -25,10 +25,15 @@ body {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid black;
   border-radius: 20px;
-  height: 32.9375em;
   width: 24em;
-  box-shadow: 16px 16px 0 0 rgba(0, 0, 0, 1);
+  min-height: 100%;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
   padding: 1.5em;
+}
+
+.container__card:hover {
+  box-shadow: 16px 16px 0 0 rgba(0, 0, 0, 1);
+  transition: box-shadow 0.7s ease, transform 0.7s ease; /* Smooth transition for hover effect */
 }
 
 .container__card-img img {
@@ -63,13 +68,13 @@ body {
 
 .container__card-info-description {
   color: hsl(0, 0%, 50%);
+  line-height: 1.5em;
 }
 
 .container__card-info-avatar {
   display: flex;
   align-items: center;
 }
-
 .container__card-info-author {
   font-weight: 800;
   padding-left: 12px;
